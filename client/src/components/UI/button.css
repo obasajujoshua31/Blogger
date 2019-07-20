@@ -1,0 +1,17 @@
+.mybutton {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-color: #009586;
+  color: #009586;
+  background-color: inherit;
+  position: absolute;
+  top: 65%;
+  left: 45%;
+  margin-top: 2rem;
+  z-index: 5;
+}
+
+.mybutton:hover {
+  background-color: #009586;
+  color: white;
+}

@@ -1,0 +1,207 @@
+.blogheader {
+  height: 140px;
+  display: flex;
+  align-items: center;
+  padding-left: 147px;
+  background: linear-gradient(
+    to right,
+    rgb(34, 37, 52) 5%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  width: 100%;
+  color: white;
+
+  h2 {
+    font-size: 25px;
+  }
+}
+
+.singleblogpage {
+  margin: 3rem auto;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 3rem;
+  // overflow: hidden;
+}
+
+.singleblog-profile-header {
+  background-image: url("https://www.pennington.com/-/media/images/pennington-na/us/blog/seed/all-you-need-to-know-about-zoysia-grass/zoysia-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2.5rem;
+  }
+}
+
+.showcase-image {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.single-blog-recnet-post-card-details-image {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.singleblog-profilecard-content {
+  margin-top: 3.5rem;
+
+  h5 {
+    color: #848484;
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
+
+.singleblog-profilecard-wrapper {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.single-blog-recent-post-card {
+  margin-top: 2.5rem;
+  padding: 10px;
+  border: 1px solid #ddd;
+
+  .single-blog-recent-post-card-header {
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #222534;
+
+    p {
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+  }
+}
+.single-blog-recent-post-card-details {
+  margin-top: 2rem;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  color: #848484;
+}
+
+.single-blog-recent-post-card-details-content {
+  height: 120px;
+
+  a {
+    text-decoration: none;
+  }
+
+  h6 {
+    font-size: 18px;
+    color: black;
+    text-align: left;
+
+    &:hover {
+      color: rgb(71, 102, 71);
+    }
+  }
+}
+.clock-icon {
+  margin-right: 5px;
+}
+
+.showcase-content {
+  margin-top: 2.5rem;
+  text-align: left;
+
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+.font-text {
+  font-size: 14px;
+  color: #009586;
+}
+.font-icons {
+  font-size: 12px;
+  margin-right: 3px;
+}
+
+.showcase-content-group:first-child {
+  margin-right: 8px;
+}
+
+.showcase-content-details {
+  margin-top: 1.5rem;
+  font-size: 14px;
+  p {
+    color: #848484;
+  }
+}
+
+.goback-button {
+  background: #d9d9d9;
+  border-radius: 30px;
+  border: 1px solid #9f9c9c;
+  color: #222534;
+  display: flex;
+  justify-content: center;
+  padding: 10px 25px;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    background-color: #009586;
+    color: white;
+  }
+  .back-arrow {
+    padding-right: 5px;
+    font-weight: bold;
+  }
+}
+
+.single-blog-comment-area {
+  text-align: left;
+  margin-top: 2rem;
+
+  h5 {
+    color: #848484;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 80px;
+    outline: none;
+    border: 1px solid #ddd;
+  }
+
+  button {
+    background: #d9d9d9;
+    border: 1px solid #9f9c9c;
+    color: #222534;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    padding: 10px 25px;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      background-color: #009586;
+      color: white;
+      border-radius: 30px;
+    }
+  }
+}

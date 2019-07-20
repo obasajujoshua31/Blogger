@@ -1,0 +1,81 @@
+.login-form-wrapper {
+  height: calc(100vh - 189px) !important;
+  /* width: 60%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+}
+
+.login-form-wrapper form {
+  width: 50%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+
+  background-color: #222534;
+  padding: 2rem 2rem;
+}
+
+.login-form-group input {
+  padding: 6px 14px;
+}
+
+.login-form-card input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  padding: 8px 14px;
+  margin-top: 12px;
+  outline: none;
+  background-color: inherit;
+}
+
+.login-form-card input::placeholder {
+  color: #bcbcbc;
+}
+.login-form-container {
+  background-color: #222534;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-card {
+  height: 70%;
+  padding: 50px;
+  width: 80% !important;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-card button {
+  margin-top: 12px;
+  margin-bottom: 8px;
+  padding: 8px 14px;
+  outline: none;
+  width: 100%;
+  background-color: #222534;
+  color: white;
+  height: 40px;
+}
+
+.login-form-card a {
+  color: #222534;
+}
+
+.login-buttons {
+  position: relative;
+}
+
+@media only screen and (max-width: 1200px) {
+  .login-form-card {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .login-form-wrapper form {
+    width: 80% !important;
+    height: 80%;
+  }
+}
