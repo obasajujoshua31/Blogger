@@ -16,15 +16,6 @@ module.exports.getCommentById = async function(id) {
         model: User,
         attributes: ["email", "name", "user_id"],
       },
-      {
-        model: Article,
-        include: [
-          {
-            model: User,
-            attributes: ["email", "name", "user_id"],
-          },
-        ],
-      },
     ],
   });
 };

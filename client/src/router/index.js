@@ -15,7 +15,7 @@ const routes = [
     component: pages.RegisterPage,
   },
   {
-    path: "/blog/:id",
+    path: "/articles/:id",
     component: pages.SingleBlog,
   },
   {

@@ -2,11 +2,11 @@ import React from "react";
 import ProfileCard from "./ProfileCard";
 import RecentPostCard from "./RecentPostCard";
 
-function SingleBlogSideBar() {
+function SingleBlogSideBar(props) {
   return (
     <div>
       <ProfileCard />
-      <RecentPostCard />
+      <RecentPostCard articles={props.articles} />
     </div>
   );
 }

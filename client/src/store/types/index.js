@@ -3,3 +3,6 @@ export const IS_LOADING = "IS_LOADING";
 export const SET_ERROR = "SET_ERROR";
 export const SET_LOGIN_ERROR = "SET_LOGIN_ERROR";
 export const SET_REGISTER_ERROR = "SET_REGISTER_ERROR";
+export const GET_ARTICLES = "GET_ARTICLES";
+export const GET_ARTICLE = "GET_ARTICLE";
+export const CREATE_COMMENT = "CREATE_COMMENT";

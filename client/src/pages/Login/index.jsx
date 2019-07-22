@@ -12,14 +12,13 @@ import Loader from "../../components/UI/Loader";
 function LoginPage(props) {
   const { state, handleChange } = useForm({ email: "", password: "" });
   const { store, dispatch } = useContext(context);
-
   const alert = useAlert();
   const handleSubmit = e => {
     e.preventDefault();
     const { email, password } = state;
     loginUser(
       { email: email[0], password: password[0] },
-      props.history,
+      props,
       alert,
       dispatch
     );
@@ -38,7 +37,7 @@ function LoginPage(props) {
               placeholder="email"
               name="email"
               value={state.email}
-              onChange={e => handleChange(e)}
+              onChange={handleChange}
               required
             />
             <input
@@ -46,7 +45,7 @@ function LoginPage(props) {
               placeholder="password"
               name="password"
               value={state.password}
-              onChange={e => handleChange(e)}
+              onChange={handleChange}
               required
             />
             <div className="login-buttons">

@@ -15,12 +15,16 @@ module.exports.createNewComment = function() {
         { reviewer_id: user_id, content, article_id: id },
         article
       );
+
+      const newComment = await CommentService.getCommentById(
+        comment.comment_id
+      );
       return globalFn.sendHttpResponse(
         res,
         201,
         "Comment created successfully",
         {
-          data: comment,
+          data: newComment,
         }
       );
     }

@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
+import moment from "moment";
 
-function BlogContent() {
+function BlogContent({ article, history, articles }) {
   return (
     <div>
       <div className="singleblog-showcase">
@@ -12,45 +13,50 @@ function BlogContent() {
           />
         </div>
         <div className="showcase-content">
-          <h2>The Adventure Moment in the Mt. Everest</h2>
+          <h2>{article.description}</h2>
           <div className="showcase-content-icons">
             <span className="showcase-content-group">
               <i className="fas fa-user font-icons" />
               <Link to="#">
-                <span className="font-text"> Super User </span>
+                <span className="font-text"> {article.User.name} </span>
               </Link>
             </span>
             <span className="showcase-content-group">
               <i className="fas fa-calendar-week font-icons" />
               <Link to="#">
-                <span className="font-text"> July 11, 2019</span>
+                <span className="font-text">
+                  {moment(article.createdAt).format("LLLL")}
+                </span>
               </Link>
             </span>
           </div>
 
           <div className="showcase-content-details">
-            <p>
-              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
-              Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh.
-              Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-              Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-              Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-              dui. Vivamus suscipit tortor eget felis porttitor volutpat.
-              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-              posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam
-              vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget
-              felis porttitor volutpat. Pellentesque in ipsum id orci porta
-              dapibus.
-            </p>
+            <p>{article.content}</p>
           </div>
-          <button className="goback-button">
-            <span className="back-arrow">&#8592;</span>Go back
-          </button>
+          <div className="navigation-buttons">
+            <button
+              className="goback-button"
+              onClick={() => {
+                history.go(-1);
+              }}
+            >
+              <span className="back-arrow">&#8592;</span>Go back
+            </button>
+            <button
+              className="goback-button"
+              onClick={() => {
+                history.push(`/articles/${articles[0].article_id}`);
+              }}
+            >
+              <span className="back-arrow">Next &#8594;</span>
+            </button>
+          </div>
         </div>
+        <hr />
       </div>
-      <div className="singleblog-sidebar" />
     </div>
   );
 }
 
-export default BlogContent;
+export default withRouter(BlogContent);

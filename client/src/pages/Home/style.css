@@ -6,7 +6,7 @@
   grid-gap: 10px;
 }
 
-.showcasegridboxes div {
+.showcasegridboxes .single-article {
   background-image: url("https://demo.rigorousthemes.com/blog-lite/wp-content/uploads/2016/07/mount-everest-89590_1920-1024x768.jpg");
   background-size: cover;
   background-repeat: no-repeat;

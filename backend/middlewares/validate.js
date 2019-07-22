@@ -30,6 +30,9 @@ module.exports.validatePostArticle = function() {
     check("description")
       .isLength({ min: 1 })
       .withMessage("Description cannot be empty"),
+    check("heading")
+      .isLength({ min: 1 })
+      .withMessage("Heading cannot be empty"),
 
     (req, res, next) => {
       const errors = validationResult(req);

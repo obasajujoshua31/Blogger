@@ -4,7 +4,11 @@ export default {
   post: function(url, payload) {
     return new Promise((resolve, reject) => {
       return axios
-        .post(url, payload)
+        .post(url, payload, {
+          headers: {
+            Authorization: localStorage.getItem("userToken"),
+          },
+        })
         .then(response => {
           resolve(response.data);
         })

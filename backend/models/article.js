@@ -16,6 +16,11 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING,
       allowNull: false,
     },
+
+    heading: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    },
     numberOfComments: {
       type: Sequelize.INTEGER,
       allowNull: false,

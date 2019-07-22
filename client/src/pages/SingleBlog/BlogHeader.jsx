@@ -1,9 +1,9 @@
 import React from "react";
 
-function BlogHeader() {
+function BlogHeader({ article }) {
   return (
     <div className="blogheader">
-      <h2>Adventure Moment in the Mount Everest</h2>
+      <h2>{article.description}</h2>
     </div>
   );
 }

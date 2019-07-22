@@ -109,7 +109,7 @@
   }
 
   h6 {
-    font-size: 18px;
+    font-size: 16px;
     color: black;
     text-align: left;
 
@@ -120,6 +120,11 @@
 }
 .clock-icon {
   margin-right: 5px;
+  font-size: 10px;
+
+  span {
+    font-size: 12px;
+  }
 }
 
 .showcase-content {
@@ -203,5 +208,39 @@
       color: white;
       border-radius: 30px;
     }
+  }
+}
+
+.page-loader {
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-comment {
+  span:first-child {
+    color: #009586;
+  }
+  .comment {
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 5px;
+    color: #222534;
+    background-color: white;
+  }
+}
+
+.blog-comment-details {
+  display: flex;
+  justify-content: space-between;
+
+  .date {
+    color: #848484;
   }
 }

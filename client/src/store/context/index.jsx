@@ -3,8 +3,8 @@ import reducer from "./reducer";
 
 const initialState = {
   isLoading: false,
-  blogs: [],
-  blog: {},
+  articles: [],
+  article: null,
   error: {},
   isLoggedIn: false,
 };
